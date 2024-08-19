@@ -5724,13 +5724,13 @@ jeepney = ">=0.6"
 
 [[package]]
 name = "semantic-kernel"
-version = "1.2.0"
+version = "1.5.1"
 description = "Semantic Kernel Python SDK"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "semantic_kernel-1.2.0-py3-none-any.whl", hash = "sha256:3ef756debba1d646b6844cd2316abec0047fcab34dba0240bfb6780cd1df9661"},
-    {file = "semantic_kernel-1.2.0.tar.gz", hash = "sha256:1a7d29c3d1dec29c6dda27ad9c0116dfdabc0093c9b17d0b73e284ceefdc4e9c"},
+    {file = "semantic_kernel-1.5.1-py3-none-any.whl", hash = "sha256:c60fb6c537602a1a3a60c1e7fa74507ba9ab2a4fbd00db7eabc330a2bb4cfd9d"},
+    {file = "semantic_kernel-1.5.1.tar.gz", hash = "sha256:9e057a27f6e84711a227623ec07a6757a2995624fede2e1d638006a1f53facee"},
 ]
 
 [package.dependencies]
@@ -5744,25 +5744,30 @@ numpy = [
 ]
 openai = ">=1.0"
 openapi_core = ">=0.18,<0.20"
+opentelemetry-api = ">=1.24.0,<2.0.0"
+opentelemetry-sdk = ">=1.24.0,<2.0.0"
+pandas = ">=2.2.2,<3.0.0"
 prance = ">=23.6.21.0,<24.0.0.0"
 pybars4 = ">=0.9.13,<0.10.0"
 pydantic = ">=2,<3"
 pydantic-settings = ">=2,<3"
 
 [package.extras]
-all = ["azure-ai-inference (>=1.0.0b1,<2.0.0)", "azure-core (>=1.28.0,<2.0.0)", "azure-cosmos (>=4.7.0,<5.0.0)", "azure-identity (>=1.13.0,<2.0.0)", "azure-search-documents (==11.6.0b4)", "chromadb (>=0.4.13,<0.6.0)", "ipykernel (>=6.21.1,<7.0.0)", "milvus (>=2.3,<2.3.8)", "mistralai (>=0.4.1,<0.5.0)", "motor (>=3.3.2,<4.0.0)", "pinecone-client (>=3.0.0)", "psycopg[binary,pool] (>=3.1.9,<4.0.0)", "pyarrow (>=12.0.1,<17.0.0)", "pymilvus (>=2.3,<2.4.4)", "qdrant-client (>=1.9,<2.0)", "redis (>=4.6.0,<5.0.0)", "sentence-transformers (>=2.2.2,<3.0.0)", "transformers[torch] (>=4.28.1,<5.0.0)", "usearch (>=2.9,<3.0)", "weaviate-client (>=3.18,<5.0)"]
+all = ["azure-ai-inference (>=1.0.0b1,<2.0.0)", "azure-core (>=1.28.0,<2.0.0)", "azure-cosmos (>=4.7.0,<5.0.0)", "azure-identity (>=1.13.0,<2.0.0)", "azure-search-documents (==11.6.0b4)", "chromadb (>=0.4.13,<0.6.0)", "ipykernel (>=6.21.1,<7.0.0)", "milvus (>=2.3,<2.3.8)", "mistralai (>=0.4.1,<0.5.0)", "motor (>=3.3.2,<4.0.0)", "ollama (>=0.2.1,<0.3.0)", "pinecone-client (>=5.0.0,<6.0.0)", "psycopg[binary,pool] (>=3.2.1,<4.0.0)", "pyarrow (>=12.0.1,<18.0.0)", "pymilvus (>=2.3,<2.4.5)", "qdrant-client (>=1.9,<2.0)", "redis[hiredis] (>=5.0.7,<6.0.0)", "sentence-transformers (>=2.2.2,<3.0.0)", "torch (==2.2.2)", "transformers[torch] (>=4.28.1,<5.0.0)", "usearch (>=2.9,<3.0)", "weaviate-client (>=3.18,<5.0)"]
 azure = ["azure-ai-inference (>=1.0.0b1,<2.0.0)", "azure-core (>=1.28.0,<2.0.0)", "azure-cosmos (>=4.7.0,<5.0.0)", "azure-identity (>=1.13.0,<2.0.0)", "azure-search-documents (==11.6.0b4)"]
 chromadb = ["chromadb (>=0.4.13,<0.6.0)"]
-hugging-face = ["sentence-transformers (>=2.2.2,<3.0.0)", "transformers[torch] (>=4.28.1,<5.0.0)"]
-milvus = ["milvus (>=2.3,<2.3.8)", "pymilvus (>=2.3,<2.4.4)"]
+google = ["google-cloud-aiplatform (>=1.60.0,<2.0.0)", "google-generativeai (>=0.7.2,<0.8.0)"]
+hugging-face = ["sentence-transformers (>=2.2.2,<3.0.0)", "torch (==2.2.2)", "transformers[torch] (>=4.28.1,<5.0.0)"]
+milvus = ["milvus (>=2.3,<2.3.8)", "pymilvus (>=2.3,<2.4.5)"]
 mistralai = ["mistralai (>=0.4.1,<0.5.0)"]
 mongo = ["motor (>=3.3.2,<4.0.0)"]
 notebooks = ["ipykernel (>=6.21.1,<7.0.0)"]
-pinecone = ["pinecone-client (>=3.0.0)"]
-postgres = ["psycopg[binary,pool] (>=3.1.9,<4.0.0)"]
+ollama = ["ollama (>=0.2.1,<0.3.0)"]
+pinecone = ["pinecone-client (>=5.0.0,<6.0.0)"]
+postgres = ["psycopg[binary,pool] (>=3.2.1,<4.0.0)"]
 qdrant = ["qdrant-client (>=1.9,<2.0)"]
-redis = ["redis (>=4.6.0,<5.0.0)"]
-usearch = ["pyarrow (>=12.0.1,<17.0.0)", "usearch (>=2.9,<3.0)"]
+redis = ["redis[hiredis] (>=5.0.7,<6.0.0)", "types-redis (>=4.6.0.20240425,<5.0.0.0)"]
+usearch = ["pyarrow (>=12.0.1,<18.0.0)", "usearch (>=2.9,<3.0)"]
 weaviate = ["weaviate-client (>=3.18,<5.0)"]
 
 [[package]]
@@ -7027,4 +7032,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c5fa1415eecbcd6b79c4041194f8e40db212cef1f63e6e1b35fa13da936dd808"
+content-hash = "1d64f3b2c72db02b8b00ee4f9def30df9d8c35b5c301f32ef890eacb5013df08"
